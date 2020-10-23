@@ -1,0 +1,6 @@
+# relative to $HOME directory
+[rbm_analysis]
+rbm_analysis_src = "Documents/lab/code/rbm_analysis"
+
+
+
