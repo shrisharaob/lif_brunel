@@ -22,14 +22,6 @@ python: see requirements
 
 Tested on Mac OS 10.14.6
 
-**Configuration**
-
-Edit the file `config.toml` and set the path to `rbm_analysis` folder
-
-`rbm_analysis` can be downloaded as:
-
-`git@gitlab.com:rbm-hippo/rbm_analysis.git <path_to_dir>`
-
 ## Usage
 
 Example usage in ./notebooks

@@ -11,14 +11,16 @@ from scipy.signal import square as square_wave
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 import seaborn
 import glob
+
 # set src paths
-home_dir = Path.home()
+# home_dir = Path.home()
 script_path = str(Path(__file__).resolve().parent)
-pyconf = toml.load(script_path + '/config.toml')
-rbm_analysis_scr = home_dir / pyconf['rbm_analysis']['rbm_analysis_src']
-# sys.path.append(str(rbm_analysis_scr))
-sys.path.append(str(rbm_analysis_scr / 'helpers'))
-# import analyse_dataset as ad  # noqa
+# pyconf = toml.load(script_path + '/config.toml')
+# rbm_analysis_scr = home_dir / pyconf['rbm_analysis']['rbm_analysis_src']
+# # sys.path.append(str(rbm_analysis_scr))
+# sys.path.append(str(rbm_analysis_scr / 'helpers'))
+# # import analyse_dataset as ad  # noqa
+
 import plot_utils as pu  # noqa
 seaborn.set()
 # import C++ simulation lib
@@ -42,6 +44,8 @@ def runsim(**params):
     try:
         # display the simulation results
         display_sim_results(new_conf)
+        plt.ion()
+        plt.show()
     except Exception as err:
         print(err)
         pass
