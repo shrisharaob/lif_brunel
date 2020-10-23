@@ -5,7 +5,7 @@ Brunel LIF network
 
 **Download**
 
-`git clone git@gitlab.com:rbm-hippo/lif_stp.git <path_to_dir>`
+`git clone https://github.com/shrisharaob/lif_brunel <path_to_dir>`
 
 **Requirements**
 
